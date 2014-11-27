@@ -1,0 +1,605 @@
+#body {
+}
+
+#div_title {
+
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 950px;
+    height: 100px;
+    border: 1px #ffffff;
+}
+
+.top-bar {
+    background: #99D6AD;
+    min-height: 80px;
+    position: fixed;
+}
+
+#btn_home {
+
+    margin-left: 800px;
+    margin-top: 20px;
+    font-family: 'open sans';
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+
+}
+
+#div_fb_login {
+    float: left;
+    margin-left: 400px;
+    margin-top: 50px;
+    height: 300px;
+    width: 400px;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 10px 6px 6px #777;
+    -moz-box-shadow: 0 6px 6px 6px #777;
+    box-shadow: 0 2px 6px 2px #777;
+
+}
+
+#div_err {
+
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 100px;
+    width: 500px;
+
+}
+
+#btn_analaysispage {
+    float: inherit;
+    background-color: #2DB82D;
+    margin-left: 700px;
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+#div_testdetails {
+
+    margin-top: 10px;
+    margin-left: 400px;
+    width: 350px;
+    height: 330px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 6px 6px #777;
+    -moz-box-shadow: 0 6px 6px 6px #777;
+    box-shadow: 0 2px 6px 2px #777;
+
+}
+
+#txt_testname {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 250px;
+    font-family: 'Open Sans';
+}
+
+#txt_testdesc {
+    margin-left: 30px;
+    width: 250px;
+    font-family: 'Open Sans';
+}
+
+#txt_testduration {
+    margin-left: 30px;
+    width: 250px;
+    font-family: 'Open Sans';
+}
+
+#btn_see-analysis {
+    margin-top: 20px;
+    margin-left: 500px;
+    font-family: 'Open Sans';
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+#graph_div{
+    margin-top: 100px;
+    margin-left: 400px;
+    height: 200px;
+    width: 300px;
+
+}
+#btn_testcreate {
+    background-color: #B80000;
+    font-family: 'Open Sans';
+    margin-top: 20px;
+    margin-left: 200px;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+#logo {
+
+    margin-left: 800px;
+}
+
+#fb-root {
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+.header {
+    top: 0px;
+    background-color: #47B56C;
+    height: 80px;
+    width: 100%;
+}
+
+#logins {
+    float: left;
+    margin-left: 400px;
+    margin-top: 50px;
+    height: 300px;
+    width: 500px;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 10px 6px 6px #777;
+    -moz-box-shadow: 0 6px 6px 6px #777;
+    box-shadow: 0 2px 6px 2px #777;
+}
+
+#btn_instructor_login {
+    margin-top: 50px;
+    font-family: 'Open Sans';
+    margin-left: 150px;
+    padding-top: 0.8rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    border-radius: 3px;
+    background-color: #33ccff;
+}
+
+.btn_student .button {
+    font-family: 'Open Sans';
+    background-color: #3b5998;
+    margin-top: 80px;
+    margin-left: 110px;
+    padding-top: 0.8rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    border-radius: 2px;
+
+}
+
+#register {
+    display: none;
+    height: 450px;
+    width: 450px;
+    margin-left: 700px;
+    margin-top: 20px;
+    border: solid;
+    border-radius: 10px;
+}
+
+#loginform {
+    display: none;
+    margin-top: 100px;
+    margin-left: 450px;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    border: solid 1px #666666;
+}
+
+#instlogin {
+    color: #B80000;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+#email {
+    margin-top: 30px;
+    margin-left: 35px;
+    font-family: 'Open Sans';
+    width: 250px;
+}
+
+#password {
+
+    margin-left: 35px;
+    margin-top: 40px;
+    font-family: 'Open Sans';
+    width: 250px;
+    float: inherit;
+}
+
+#loginform .button {
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 20px;
+    font-family: 'open sans';
+    font-size: 15px;
+    background-color: #D11919;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+#form {
+    display: none;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 300px;
+    width: 700px;
+    border: solid;
+    border-radius: 15px;
+}
+
+#start {
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 400px;
+    width: 120px;
+}
+
+#search {
+
+    margin-left: 150px;
+    margin-top: 70px;
+    height: 100px;
+    width: 500px;
+    border: dotted;
+}
+
+#questionsform {
+
+    margin-top: 40px;
+    margin-left: 400px;
+    height: 400px;
+    width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 10px 6px 6px #777;
+    -moz-box-shadow: 0 6px 6px 6px #777;
+    box-shadow: 0 2px 6px 2px #777;
+}
+
+#countquest {
+    margin-top: 80px;
+    margin-left: 550px;
+    height: 70px;
+    width: 500px;
+    display: none;
+}
+
+#showquestions {
+    margin-top: 80px;
+    margin-left: 550px;
+    height: 1000px;
+    width: 650px;
+
+}
+
+.questionform {
+    margin-left: 300px;
+    height: 380px;
+    width: 600px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 10px 6px 6px #777;
+    -moz-box-shadow: 0 6px 6px 6px #777;
+    box-shadow: 0 2px 6px 2px #777;
+
+}
+
+#nextbuttonatstarttest {
+    font-family: 'Open Sans';
+    top: -30px;
+    width: 100px;
+    margin-left: 300px;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    background-color: #3385AD;
+}
+
+#seeresult {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    margin-left: 200px;
+    font-family: 'open sans'
+}
+
+#scorediv {
+    margin-top: -20px;
+    margin-left: 70px;
+    font-family: 'open sans';
+    font-size: 15px;
+}
+
+#scorehidden {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: none;
+    font-family: 'open sans';
+    font-size: 15px;
+    font-size: 15px;
+
+}
+
+#scoreboard {
+    display: none;
+    margin-left: 600px;
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid #666666;
+}
+
+#totalmarkshidden {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: none;
+    font-family: 'open sans';
+    font-size: 15px;
+    font-size: 15px;
+}
+
+#totalmarks {
+
+    margin-top: -20px;
+    margin-left: 70px;
+    font-family: 'open sans';
+    font-size: 15px;
+}
+
+#testbutton {
+    font-family: 'open sans';
+    margin-left: 150px;
+    margin-top: 15px;
+    border-radius: 0px;
+    text-align: center;
+    width: 100px;
+    padding-top: 1.0rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+#currentuser {
+
+    margin-left: 800px;
+    font-family: 'open sans';
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#start_analysis_button {
+    background-color: #339933;
+    margin-left: 1000px;
+    margin-top: 35px;
+    font-size: 15px;
+    font-family: 'open sans';
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+#add_questions_button {
+    background-color: #339933;
+    font-size: 15px;
+    margin-left: 1000px;
+    margin-top: 10px;
+    font-family: 'open sans';
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+#search_test_button {
+    background-color: #D11919;
+    margin-top: 0px;
+    margin-left: 25px;
+    float: left;
+    font-family: 'open sans';
+    font-size: 15px;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+#Tsearch_test {
+    margin-top: 0px;
+    margin-left: 100px;
+    width: 150px;
+    float: left;
+    font-family: 'open sans';
+    font-size: 15px;
+}
+
+#psearch_test {
+    margin-top: -80px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+#overall_percentage_button {
+    margin-top: 25px;
+    margin-left: 150px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+#test_difficulty_level_button {
+    margin-top: 10px;
+    margin-left: 600px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.0rem;
+}
+
+#pno_of_students {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+
+}
+
+#chart1 {
+
+    margin-left: 300px;
+    margin-top: 100px;
+    height: 500px;
+    width: 300px;
+}
+
+#div_graph {
+    float: left;
+    margin-top: 50px;
+    margin-left: 200px;
+    height: 300px;
+    width: 330px;
+    border: 2px #000000;
+}
+
+#poverall_percentage {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+
+}
+
+#div_diff_level {
+    display: none;
+    margin-top: 50px;
+    margin-left: 800px;
+    border: 2px solid #666666;
+    height: 250px;
+    width: 400px;
+
+}
+
+#p_cutoff_mark {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    float: inherit;
+}
+
+#btn_testsave {
+
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    margin-left: 950px;
+    padding-top: 0.5rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 2px;
+}
+
+#pnum_of_students {
+
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    float: inherit;
+}
+
+#pwho_reached_cutoff {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    float: inherit;
+}
+
+#pdiff_level {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    float: inherit;
+}
+
+#btn_post_questions {
+    float: left;
+    background-color: #CC0000;
+    margin-left: 300px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    margin-top: 30px;
+    padding-top: 0.4rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.0rem;
+}
+
+#btn_save_test {
+    font-family: 'Open Sans';
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    padding-top: 0.4rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.0rem;
+}
+
+#testid, #question, #option1, #option2, #option3, #option4, #answerindex {
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+#btn_err_home {
+    font-family: 'Open Sans';
+    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 0.4rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.0rem;
+}
+
+#btn_logout {
+    margin-left: 600px;
+    margin-top: 350px;
+    font-family: 'Open Sans';
+    padding-top: 0.4rem;
+    padding-right: 1.0rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.0rem;
+}

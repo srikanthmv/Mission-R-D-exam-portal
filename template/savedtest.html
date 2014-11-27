@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+         <a class="button" href="/testPages/" id="add_questions_button">Add Questions</a>
+         <a class="button" href="/analysis" id="start_analysis_button">Start Analysis</a>
+
+    <form method="get" action="/showtest/">
+        <p id="psearch_test">You can see your test questions here</p>
+        <input type="number" name="search" placeholder="Enter Test-Id" id="Tsearch_test"/>
+        <input type="submit" class="button" value="Search" id="search_test_button"/>
+    </form>
+
+    <div id="showquestions">
+        {% for ques in testDetails %}
+            <p style=" margin-left: 25px;font-size: 20px;margin-top:30px;font-family: 'open sans'">{{ ques.value }}</p>
+            {% for opt in ques.options_set.all %}
+                <input id="{{ opt.id }}" type="radio" name="radio" value="{{ opt.value }}"
+                       style=" margin-left: 20px;font-size:20px;font-family:'open sans';float: inherit">{{ opt.value }}
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+    <script src="{{ STATIC_URL }}js/fblogin.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <p style="margin-left: 300px;margin-top: 30px;font-family: 'Open Sans';font-size: 30px;color:#B80000">
+        Welcome to Mission R&D Exam practice portal</p>
+    <img style="margin-left: 180px;"
+         src="http://2.bp.blogspot.com/-ZWjRv323eOc/T5ONckSUwDI/AAAAAAAAAb0/bc-6Qnu58Bc/s1600/FadingLineGraphic.png"
+         width="850px;"/>
+
+    <div id="div_fb_login">
+        <p style="color:#002952;margin-left:100px;margin-top:10px;font-family:'Open Sans';font-size: 20px;">Weclome Student</p>
+        <p style="color:#002952;margin-left:60px;margin-top:20px;font-family:'Open Sans';font-size: 20px;">Please login to take test</p>
+        <img style="margin-left: 40px;margin-top: 20px" src="http://2.bp.blogspot.com/-ZWjRv323eOc/T5ONckSUwDI/AAAAAAAAAb0/bc-6Qnu58Bc/s1600/FadingLineGraphic.png" width="300px">
+           <p style="font-family: 'Open Sans';margin-top: 50px;margin-left: 100px;"><fb:login-button scope="public_profile,email" size="large" onlogin="checkLoginState();">
+               Login with facebook</fb:login-button></p>
+    </div>
+
+
+{% endblock %}

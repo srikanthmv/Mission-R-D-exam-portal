@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+        <script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/jquery.countdownTimer.css">
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.countdownTimer.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/useranswers.js"></script>
+
+    </head>
+
+    <script>
+        $(function () {
+            $("#count").countdowntimer({
+                minutes: 50,
+                seconds: 5,
+                size: "sm",
+                timeUp: timesUp
+
+            });
+            function timesUp() {
+                location.href = '/result/'
+            }
+        });
+
+    </script>
+    <p id="currentuser">Welcome,{{ current_user_name }}</p>
+    <div id="count" style="margin-top:10px;margin-left: 800px;width: 65px;">
+    </div>
+    <div class="questionform">
+        <form id="answersave">
+            {#            {% for quesid in quesid %}#}
+            <input type="hidden" name="questionid" id="questionid" value="{{ questions.pk }}">
+            <input type="hidden" name="questionno" id="questionno" value="{{ quesno }}">
+            <input type="hidden" id="testid" name="testid" value="{{ testID }}">
+
+            {#            {% endfor %}#}
+            <p id="question"
+               style="font-family: 'open sans';margin-left: 20px;margin-top: 70px;float: inherit">{{ questions.value }}</p>
+            <br>
+
+
+            <p style="font-family: 'open sans';margin-left: 20px;float: inherit" id='radiop1'>
+                <input type="radio" id="val1" name="radio" value={{ a1 }}><label id="label1">{{ a1 }}</label>
+            </p>
+
+            <p style="font-family: 'open sans';margin-left: 20px;float: inherit"><input id="val2" type="radio" name="radio"
+                                                                                        value="{{ a2 }}"><label
+                    id="label2">{{ a2 }}</label></p>
+
+            <p style="font-family: 'open sans';margin-left: 20px;float: inherit"><input id="val3" type="radio" name="radio"
+                                                                                        value="{{ a3 }}"><label
+                    id="label3">{{ a3 }}</label></p>
+
+            <p style="font-family: 'open sans';margin-left: 20px;float: inherit"><input type="radio" id="val4" name="radio"
+                                                                                        value="{{ a4 }}"><label
+                    id="label4">{{ a4 }}</label></p>
+
+
+            <input onclick="saveanswers()" name="next" value="Next" class="button" id="nextbuttonatstarttest">
+        </form>
+    </div>
+
+
+{% endblock %}

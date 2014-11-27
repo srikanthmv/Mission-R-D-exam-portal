@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="../excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dist/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dist/plugins/jqplot.barRenderer.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dist/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dist/plugins/jqplot.pointLabels.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/graphs.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/dist/jquery.jqplot.css"/>
+
+    <script>
+        window.onload = check_plot()
+    </script>
+
+    <div id="chart1">
+    </div>
+{% endblock %}

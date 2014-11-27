@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <p style=" margin-left: 50px;font-family:'open sans';font-size: 25px;" xmlns="http://www.w3.org/1999/html">Avilabile Tests</p>
+    {% if tests %}
+
+         {% for test in tests %}
+            <ul>
+             <li style="margin-left: 100px;font-family: 'open sans'"><a href="/starttest/1">{{ test.testName }}</a></li>
+            </ul>
+
+          {% endfor %}
+
+    {% endif %}
+
+{% endblock %}

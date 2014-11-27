@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <body id="body">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+            xmlns="http://www.w3.org/1999/html"></script>
+
+    <script src="{{ STATIC_URL }}js/questionspost.js"></script>
+    <p style=" margin-left: 25px;margin-top: 20px;font-family:'open sans';font-size: 20px;">Test-Id & Test-Name</p>
+
+    <div id="start">
+        {% for i in test_table %}
+            <a style=" float: left; margin-left: 5px;font-family: 'open sans';font-size: 20px;margin-top: 10px;">
+                {{ i.id }}:{{ i.testName }}<br></a>
+        {% endfor %}
+    </div>
+        <p style="margin-left: 550px;font-family: 'Open Sans';font-size: 23px;color:#B80000">Post your Questions here..!!</p>
+    <div id="questionsform">
+
+        <form id="form_question_post">
+            <input id="testid" type="number" placeholder="Enter Test-id" name="testid" style="float:inherit;margin-top:40px;margin-left: 25px;width: 420px;" required/>
+            <input id="question" type="text" placeholder="Enter Question" name="question"
+                   style="float:inherit;margin-top:40px;margin-left: 25px;width: 420px;" required/>
+            <p id="questionerr" style="margin-left: 25px;font-family: 'Open Sans';font-size: 10px;" hidden>Enter question</p>
+            <input id="option1" type="text" placeholder="option1" name="option1"
+                   style="margin-top:40px;margin-left: 25px;float: left;width:120px;"required="enter option1"/>
+            <input id="option2" type="text" placeholder="option2" name="option2"
+                   style="margin-top:40px;margin-left: 25px;float: left;width:120px;" required/>
+            <input id="option3" type="text" placeholder="option3" name="option3"
+                   style="margin-top:40px;margin-left: 25px;float: left;width:120px;" required/>
+            <input id="option4" type="text" placeholder="option4" name="option4"
+                   style=" margin-top:40px;margin-left: 25px;float: left;width:120px;"required/>
+            <input id="answerindex" type="number" placeholder="Enter Answer option index BETWEEN 0 - 3 ONLY" name="answerindex"
+                   style="margin-top:50px;margin-left: 25px;width: 420px;" required/>
+            <a onclick="post_questions()" name="next" class="button" id="btn_post_questions"/>Next Question</a>
+            <a href="/searchtest/" id="btn_save_test" class="button">Save test</a>
+        </form>
+    </div>
+</body>
+{% endblock %}
