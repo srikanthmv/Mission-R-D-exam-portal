@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/sri.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/foundation.css"/>
+{#    <script src="{{ STATIC_URL }}js/modernizr.js"></script>#}
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700"
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div class="top-bar">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#"><img style="margin-top: 10px;"
+                                 src="http://www.missionrnd.com/sites/all/themes/bluemasters/logo.png"></a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    </ul>
+    <ul>
+        <li><a href="/home/" id="btn_home" class="button">Take me to home</a></li>
+
+    </ul>
+</div>
+
+{% block content %}  {% endblock %}
+</body>
+</html>

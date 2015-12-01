@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+    <link type="stylesheet" href="{{ STATIC_URL }}css/stylesheet.css">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/foundation.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#btn_instructor_login").click(function () {
+                    $("#loginform").foundation('reveal','open');
+
+                });
+            });
+        </script>
+    </head>
+        <p style=" margin-left: 300px;margin-top: 30px;font-family: 'Open Sans';font-size: 30px;color:#B80000">
+        Welcome to Mission R&D Exam practice portal</p>
+        <img style="margin-left: 180px;" src="http://2.bp.blogspot.com/-ZWjRv323eOc/T5ONckSUwDI/AAAAAAAAAb0/bc-6Qnu58Bc/s1600/FadingLineGraphic.png" width="850px;"/>
+
+    <div id="logins">
+
+            <a id="btn_instructor_login" href="#" data-reveal-id="loginform" class="button">Instructor Login</a>
+
+        <div class="btn_student">
+            <a id="studentlogin" href="/login/" class="button">Student Login with facebook</a>
+        </div>
+    </div>
+
+    <div id="loginform" class="reveal-modal" data-reveal>
+        <p id="instlogin">Instructor Login</p>
+        <p style="margin-left: 30px;margin-top: 10px;">.........................................................</p>
+        <form method="post" action="/inst/">{% csrf_token %}
+            <input id="email" type="text" placeholder="Enter Username" name="username" required/>
+            <input id="password" type="password" placeholder="Password" name="password" required/>
+            <input type="submit" id="btn_login" class="button" value="Login"/>
+            <p style="font-family:'Open Sans';font-size: 15px;">{{ error }}</p>
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+{% endblock %}

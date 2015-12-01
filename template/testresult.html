@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/checkresult.js"></script>
+    <p style=" margin-top:35px;margin-left:200px;font-family:'Roboto';font-size: 20px;">You have been sucessfully
+            Attempted the Test..! </p>
+    <input type="hidden" id="testid" name="testid" value="{{ testid.pk }}">
+    <input id="seeresult" onclick="seeresult()" value="Check your result" class="button"/>
+    <div id="scoreboard">
+    <p id="scorehidden"><b>Your Score is</b></P><p id="scorediv"><b>{{ score }}/{{ totalmarks }}</b></p>
+    <p id="totalmarkshidden"><b>Out of</b></P><p id="totalmarks"><b>{{ totalmarks }}</b></p>
+    </div>
+{#    <a href="/logout/" id="btn_logout" class="button">Logout</a>#}
+{% endblock %}

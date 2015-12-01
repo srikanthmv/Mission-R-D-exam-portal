@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% block content %}
+    <p style="margin-left: 50px; float:left;margin-top: 20px;font-size: 18px;font-family: 'Open Sans'">Welcome instructor</p>
+    <a href="/analysis/"  id="btn_analaysispage" class="button">Go to Analysis Page</a>
+    <a href="/store/" id="btn_testsave" class="button">Save Last Test</a>
+    <div id="div_testdetails">
+        <p style="margin-left: 100px;margin-top: 20px;font-size:20px;font-family: 'Open Sans';color:#B80000">Create your test</p>
+        <form method="POST" action="/createtest/">{% csrf_token %}
+            <input type="text" id="txt_testname" name="testname" placeholder="Enter your test name" required/>
+            <input type="text" id="txt_testdesc" name="testdescription" placeholder="Enter test description" required/>
+            <input type="number" id="txt_testduration" name="testduration" placeholder="Enter test duration" required/>
+            <input type="submit" class="button" id="btn_testcreate" value="Create test">
+        </form>
+    </div>
+{% endblock %}
